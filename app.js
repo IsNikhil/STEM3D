@@ -9,7 +9,7 @@
 'use strict';
 
 // ---- Config ------------------------------------------------
-const WEBHOOK_URL = 'https://script.google.com/a/macros/selu.edu/s/AKfycbxff4_9wZtwse3V18rvfInpomd-GW3tXA2wh0cOpLLAZjmVGLVBljb6hAkm4JQ7INcyDg/exec';
+const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxff4_9wZtwse3V18rvfInpomd-GW3tXA2wh0cOpLLAZjmVGLVBljb6hAkm4JQ7INcyDg/exec';
 
 // Printer list — add more printers here if the lab expands
 const PRINTERS = ['Printer 1', 'Printer 2', 'Printer 3', 'Printer 4'];
