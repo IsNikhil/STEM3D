@@ -1,6 +1,6 @@
 /* ============================================================
-   NORTHSHORE STEM CENTER — 3D Print Request App
-   Vanilla JS — no frameworks, no build step
+   NORTHSHORE STEM CENTER - 3D Print Request App
+   Vanilla JS - no frameworks, no build step
 
    Created by: Nikhil Shah
    Contact:    nikhilkrsha@gmail.com
@@ -11,7 +11,7 @@
 // ---- Config ------------------------------------------------
 const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxff4_9wZtwse3V18rvfInpomd-GW3tXA2wh0cOpLLAZjmVGLVBljb6hAkm4JQ7INcyDg/exec';
 
-// Printer list — add more printers here if the lab expands
+// Printer list - add more printers here if the lab expands
 const PRINTERS = ['Printer 1', 'Printer 2', 'Printer 3', 'Printer 4'];
 
 // ---- State -------------------------------------------------
@@ -203,7 +203,7 @@ form.addEventListener('submit', async (e) => {
         body: JSON.stringify(payload),
       });
     } catch (_) {
-      // Intentionally silenced — form works without backend
+      // Intentionally silenced - form works without backend
     }
   }
 
