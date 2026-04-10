@@ -6,7 +6,8 @@ A kiosk-mode web app for the iPad next to the 3D printers. Students fill out thi
 
 ## Quick Links
 - **STEM Center website:** https://www.southeastern.edu/college-of-science-and-technology/northshore-regional-stem-center/
-- **Contact / issues:** stemcenter@selu.edu
+- **STEM Center contact / lab issues:** stemcenter@selu.edu
+- **Website issues / technical questions:** Nikhil Shah — nikhilkrsha@gmail.com
 
 ---
 
