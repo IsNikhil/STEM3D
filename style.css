@@ -856,6 +856,96 @@ input[type="date"] {
   }
 }
 
+/* ---------- Optional label tag ---------- */
+.opt {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-placeholder);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------- File entries ---------- */
+.file-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.file-entry {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.file-printer-wrap {
+  flex: 0 0 140px;
+}
+
+.file-entry .file-name-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.remove-file-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 48px;
+  border: 1px solid rgba(255, 107, 107, 0.25);
+  border-radius: var(--radius-xs);
+  background: rgba(255, 107, 107, 0.08);
+  color: var(--error-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+.remove-file-btn:hover:not(:disabled) {
+  background: rgba(255, 107, 107, 0.18);
+}
+.remove-file-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+.remove-file-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.add-file-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 10px 16px;
+  min-height: 44px;
+  background: transparent;
+  border: 1px dashed rgba(107, 130, 224, 0.35);
+  border-radius: var(--radius-xs);
+  color: var(--accent-blue);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-bottom: 8px;
+}
+.add-file-btn:hover {
+  background: rgba(107, 130, 224, 0.08);
+  border-color: var(--accent-blue);
+}
+.add-file-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 520px) {
+  .file-printer-wrap { flex: 0 0 120px; }
+}
+
 /* ---------- Scrollbar (WebKit) ---------- */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }

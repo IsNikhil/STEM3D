@@ -62,7 +62,7 @@
 
         <div class="form-grid two-col">
           <div class="field-group">
-            <label for="wNumber">W Number <span class="req">*</span></label>
+            <label for="wNumber">W Number <span class="opt">(optional)</span></label>
             <input type="text" id="wNumber" name="wNumber" placeholder="W12345678" autocomplete="off" inputmode="text" />
             <span class="field-error" id="err-wNumber"></span>
           </div>
@@ -164,8 +164,12 @@
         </div>
 
         <div class="field-group" style="margin-bottom:16px">
-          <label for="fileName">File Name <span class="req">*</span></label>
-          <input type="text" id="fileName" name="fileName" placeholder="bracket_v2.stl" autocomplete="off" />
+          <label>File Name(s) <span class="req">*</span></label>
+          <div id="file-entries" class="file-entries"></div>
+          <button type="button" id="add-file-btn" class="add-file-btn">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/></svg>
+            Add Another File
+          </button>
           <span class="field-error" id="err-fileName"></span>
         </div>
 
